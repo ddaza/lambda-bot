@@ -1,0 +1,13 @@
+{
+  "name": "botfish",
+  "description": "Node.js Babel example project",
+  "role": "arn:aws:iam::915159104619:role/botfish_lambda_function",
+  "runtime": "nodejs",
+  "memory": 128,
+  "timeout": 5,
+  "handler": "lib.default",
+  "hooks": {
+    "build": "../../node_modules/.bin/webpack --config ../../webpack.config.js",
+    "clean": "rm -fr lib"
+  }
+}
